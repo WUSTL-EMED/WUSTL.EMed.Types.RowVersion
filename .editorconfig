@@ -125,7 +125,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 ################################################################################
 
 [*.cs]
-file_header_template = <copyright file="{fileName}" company="Washington University in St. Louis">\nCopyright (c) 2021 Washington University in St. Louis. All rights reserved.\nLicensed under the Apache License, Version 2.0. See License.txt in the project root for license information.\n</copyright>
+file_header_template = <copyright file="{fileName}" company="Washington University in St. Louis">\nCopyright (c) 2021 Washington University in St. Louis. All rights reserved.\nLicensed under the MIT License. See License.txt in the project root for license information.\n</copyright>
 
 # SA1101: Prefix local calls with this
 dotnet_diagnostic.SA1101.severity = none
