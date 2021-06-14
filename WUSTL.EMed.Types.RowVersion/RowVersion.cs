@@ -1,6 +1,6 @@
 ﻿// <copyright file="RowVersion.cs" company="Washington University in St. Louis">
 // Copyright (c) 2021 Washington University in St. Louis. All rights reserved.
-// Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
+// Licensed under the MIT License. See License.txt in the project root for license information.
 // </copyright>
 
 namespace WUSTL.EMed.Types

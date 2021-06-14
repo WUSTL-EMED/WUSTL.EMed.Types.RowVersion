@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WUSTL.EMed.Types.RowVersion</name>
+    </assembly>
+    <members>
+        <member name="T:WUSTL.EMed.Types.RowVersion">
+            <summary>
+            A struct respresenting a SQL Server RowVersion value.
+            </summary>
+        </member>
+        <member name="F:WUSTL.EMed.Types.RowVersion.Zero">
+            <summary>
+            A zero value <see cref="T:WUSTL.EMed.Types.RowVersion"/>.
+            </summary>
+        </member>
+        <member name="F:WUSTL.EMed.Types.RowVersion.value">
+            <summary>
+            The SQL Server RowVersion value.
+            </summary>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.#ctor(System.UInt64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WUSTL.EMed.Types.RowVersion"/> struct.
+            </summary>
+            <param name="value">The row version value as a <see cref="T:System.UInt64"/>.</param>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.#ctor(System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:WUSTL.EMed.Types.RowVersion"/> struct.
+            </summary>
+            <param name="value">The row version value as an 8 byte array.</param>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_Explicit(System.Byte[])~WUSTL.EMed.Types.RowVersion">
+            <summary>
+            Converts a <see cref="T:System.Byte"/>[] into a <see cref="T:WUSTL.EMed.Types.RowVersion"/>.
+            </summary>
+            <param name="value">A SQL Server RowVersion value as a <see cref="T:System.Byte"/>[].</param>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_Explicit(System.Byte[])~System.Nullable{WUSTL.EMed.Types.RowVersion}">
+            <summary>
+            Converts a <see cref="T:System.Byte"/>[] into a <see cref="T:WUSTL.EMed.Types.RowVersion"/>.
+            </summary>
+            <param name="value">A SQL Server RowVersion value as a <see cref="T:System.Byte"/>[].</param>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_Implicit(WUSTL.EMed.Types.RowVersion)~System.Byte[]">
+            <summary>
+            Converts a <see cref="T:WUSTL.EMed.Types.RowVersion"/> into a <see cref="T:System.Byte"/>[].
+            </summary>
+            <param name="rowVersion">A <see cref="T:WUSTL.EMed.Types.RowVersion"/> to convert.</param>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_Implicit(System.Int64)~WUSTL.EMed.Types.RowVersion">
+            <summary>
+            Converts a <see cref="T:System.Int64"/> into a <see cref="T:WUSTL.EMed.Types.RowVersion"/>.
+            </summary>
+            <param name="value">A SQL Server RowVersion value as a <see cref="T:System.Int64"/>.</param>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_Implicit(System.UInt64)~WUSTL.EMed.Types.RowVersion">
+            <summary>
+            Converts a <see cref="T:System.UInt64"/> into a <see cref="T:WUSTL.EMed.Types.RowVersion"/>.
+            </summary>
+            <param name="value">A SQL Server RowVersion value as a <see cref="T:System.UInt64"/>.</param>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_Implicit(WUSTL.EMed.Types.RowVersion)~System.UInt64">
+            <summary>
+            Converts a <see cref="T:WUSTL.EMed.Types.RowVersion"/> into a <see cref="T:System.UInt64"/>.
+            </summary>
+            <param name="rowVersion">A <see cref="T:WUSTL.EMed.Types.RowVersion"/> to convert.</param>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_Inequality(WUSTL.EMed.Types.RowVersion,WUSTL.EMed.Types.RowVersion)">
+            <summary>
+            Checks if two <see cref="T:WUSTL.EMed.Types.RowVersion"/> values are not equal.
+            </summary>
+            <param name="comparand1">The left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <param name="comparand2">The right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <returns>True if the left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value is not equal to the right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_LessThan(WUSTL.EMed.Types.RowVersion,WUSTL.EMed.Types.RowVersion)">
+            <summary>
+            Checks if one <see cref="T:WUSTL.EMed.Types.RowVersion"/> value is less than another.
+            </summary>
+            <param name="comparand1">The left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <param name="comparand2">The right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <returns>True if the left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value is less than the right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_LessThanOrEqual(WUSTL.EMed.Types.RowVersion,WUSTL.EMed.Types.RowVersion)">
+            <summary>
+            Checks if one <see cref="T:WUSTL.EMed.Types.RowVersion"/> value is less than or equal to another.
+            </summary>
+            <param name="comparand1">The left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <param name="comparand2">The right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <returns>True if the left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value is less than or equal to the right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_Equality(WUSTL.EMed.Types.RowVersion,WUSTL.EMed.Types.RowVersion)">
+            <summary>
+            Checks if two <see cref="T:WUSTL.EMed.Types.RowVersion"/> values are equal.
+            </summary>
+            <param name="comparand1">The left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <param name="comparand2">The right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <returns>True if the left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value is equal to the right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_GreaterThan(WUSTL.EMed.Types.RowVersion,WUSTL.EMed.Types.RowVersion)">
+            <summary>
+            Checks if one <see cref="T:WUSTL.EMed.Types.RowVersion"/> value is greater than another.
+            </summary>
+            <param name="comparand1">The left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <param name="comparand2">The right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <returns>True if the left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value is greater than the right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.op_GreaterThanOrEqual(WUSTL.EMed.Types.RowVersion,WUSTL.EMed.Types.RowVersion)">
+            <summary>
+            Checks if one <see cref="T:WUSTL.EMed.Types.RowVersion"/> value is greater than or equal to another.
+            </summary>
+            <param name="comparand1">The left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <param name="comparand2">The right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <returns>True if the left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value is greater than or equal to the right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.To(WUSTL.EMed.Types.RowVersion)">
+            <summary>
+            Converts a <see cref="T:WUSTL.EMed.Types.RowVersion"/> into a <see cref="T:System.Byte"/>[].
+            </summary>
+            <param name="rowVersion">A <see cref="T:WUSTL.EMed.Types.RowVersion"/> to convert.</param>
+            <returns>An <see cref="T:System.Array"/> of <see cref="T:System.Byte"/>.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.FromByteArray(System.Byte[])">
+            <summary>
+            Converts a <see cref="T:System.Byte"/>[] into a <see cref="T:WUSTL.EMed.Types.RowVersion"/>.
+            </summary>
+            <param name="value">A SQL Server RowVersion value as a <see cref="T:System.Byte"/>[].</param>
+            <returns>A <see cref="T:WUSTL.EMed.Types.RowVersion"/> object with the given value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.FromInt64(System.Int64)">
+            <summary>
+            Converts a <see cref="T:System.Int64"/> into a <see cref="T:WUSTL.EMed.Types.RowVersion"/>.
+            </summary>
+            <param name="value">A SQL Server RowVersion value as a <see cref="T:System.Int64"/>.</param>
+            <returns>A <see cref="T:WUSTL.EMed.Types.RowVersion"/> object with the given value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.FromUInt64(System.UInt64)">
+            <summary>
+            Converts a <see cref="T:System.UInt64"/> into a <see cref="T:WUSTL.EMed.Types.RowVersion"/>.
+            </summary>
+            <param name="value">A SQL Server RowVersion value as a <see cref="T:System.UInt64"/>.</param>
+            <returns>A <see cref="T:WUSTL.EMed.Types.RowVersion"/> object with the given value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.Max(WUSTL.EMed.Types.RowVersion,WUSTL.EMed.Types.RowVersion)">
+            <summary>
+            Gets the maximum of two <see cref="T:WUSTL.EMed.Types.RowVersion"/> values.
+            </summary>
+            <param name="comparand1">The left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <param name="comparand2">The right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <returns>The larger <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.Min(WUSTL.EMed.Types.RowVersion,WUSTL.EMed.Types.RowVersion)">
+            <summary>
+            Gets the minimum of two <see cref="T:WUSTL.EMed.Types.RowVersion"/> values.
+            </summary>
+            <param name="comparand1">The left <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <param name="comparand2">The right <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</param>
+            <returns>The smaller <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.From(System.Byte[])">
+            <summary>
+            Converts a <see cref="T:System.Byte"/>[] into a <see cref="T:WUSTL.EMed.Types.RowVersion"/>.
+            </summary>
+            <param name="value">A SQL Server RowVersion value as a <see cref="T:System.Byte"/>[].</param>
+            <returns>A <see cref="T:WUSTL.EMed.Types.RowVersion"/>.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.System#IComparable#CompareTo(System.Object)">
+            <summary>
+            Compares the <see cref="T:WUSTL.EMed.Types.RowVersion"/> value against another object.
+            </summary>
+            <param name="obj">An <see cref="T:System.Object"/> to compare against.</param>
+            <returns>0 if the values are equal, -1 if the <paramref name="obj"/> value is greater, otherwise 1.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.Equals(WUSTL.EMed.Types.RowVersion)">
+            <summary>
+            Checks if the <see cref="T:WUSTL.EMed.Types.RowVersion"/> value is equal to another.
+            </summary>
+            <param name="other">A different <see cref="T:WUSTL.EMed.Types.RowVersion"/> value to compare this value against.</param>
+            <returns>True if the two <see cref="T:WUSTL.EMed.Types.RowVersion"/> values are equal, otherwise false.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.ToByteArray">
+            <summary>
+            Converts a <see cref="T:WUSTL.EMed.Types.RowVersion"/> into a <see cref="T:System.Byte"/>[].
+            </summary>
+            <returns>A <see cref="T:System.Byte"/>[] value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.CompareTo(WUSTL.EMed.Types.RowVersion)">
+            <summary>
+            Compares the <see cref="T:WUSTL.EMed.Types.RowVersion"/> value against another.
+            </summary>
+            <param name="other">A <see cref="T:WUSTL.EMed.Types.RowVersion"/> to compare against.</param>
+            <returns>0 if the values are equal, -1 if the <paramref name="other"/> value is greater, otherwise 1.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.ToString">
+            <summary>
+            Converts the <see cref="T:WUSTL.EMed.Types.RowVersion"/> value to a string.
+            </summary>
+            <returns>A <see cref="T:System.String"/> representation of the <see cref="T:WUSTL.EMed.Types.RowVersion"/> value.</returns>
+        </member>
+        <member name="M:WUSTL.EMed.Types.RowVersion.ToUInt64">
+            <summary>
+            Converts a <see cref="T:WUSTL.EMed.Types.RowVersion"/> into a <see cref="T:System.UInt64"/>.
+            </summary>
+            <returns>A <see cref="T:System.UInt64"/> value.</returns>
+        </member>
+        <member name="T:ThisAssembly">
+            <summary>Provides access to the current assembly information.</summary>
+        </member>
+        <member name="T:ThisAssembly.Git">
+            <summary>Provides access to the git information for the current assembly.</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.IsDirty">
+            <summary>IsDirty: false</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.IsDirtyString">
+            <summary>IsDirtyString: false</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.RepositoryUrl">
+            <summary>Repository URL: git@github.com:WUSTL-EMED/WUSTL.EMed.Types.RowVersion.git</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Branch">
+            <summary>Branch: master</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Commit">
+            <summary>Commit: e15f1c0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Sha">
+            <summary>Sha: e15f1c06c67dfc25ae45c7e56b79ed9cc7b62cfe</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.CommitDate">
+            <summary>Commit date: 2021-03-13T11:19:27-06:00</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Commits">
+            <summary>Commits on top of base version: 2</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Tag">
+            <summary>Tag: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseTag">
+            <summary>Base tag: </summary>
+        </member>
+        <member name="T:ThisAssembly.Git.BaseVersion">
+            <summary>Provides access to the base version information used to determine the <see cref="T:ThisAssembly.Git.SemVer" />.</summary>      
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Major">
+            <summary>Major: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Minor">
+            <summary>Minor: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Patch">
+            <summary>Patch: 0</summary>
+        </member>
+        <member name="T:ThisAssembly.Git.SemVer">
+            <summary>Provides access to SemVer information for the current assembly.</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Major">
+            <summary>Major: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Minor">
+            <summary>Minor: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Patch">
+            <summary>Patch: 2</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Label">
+            <summary>Label: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.DashLabel">
+            <summary>Label with dash prefix: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Source">
+            <summary>Source: Default</summary>
+        </member>
+    </members>
+</doc>

@@ -1,6 +1,6 @@
 ﻿// <copyright file="AssemblyInfo.cs" company="Washington University in St. Louis">
 // Copyright (c) 2021 Washington University in St. Louis. All rights reserved.
-// Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
+// Licensed under the MIT License. See License.txt in the project root for license information.
 // </copyright>
 
 using System;
@@ -46,6 +46,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.1.0")]
-[assembly: AssemblyFileVersion("1.0.1.0")]
+[assembly: AssemblyVersion("1.0.2.0")]
+[assembly: AssemblyFileVersion("1.0.2.0")]
 [assembly: AssemblyInformationalVersion(ThisAssembly.Git.Sha)]

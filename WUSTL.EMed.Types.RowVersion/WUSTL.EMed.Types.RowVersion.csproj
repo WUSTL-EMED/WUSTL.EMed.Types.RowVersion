@@ -16,14 +16,14 @@
     <RepositoryUrl>https://github.com/WUSTL-EMED/WUSTL.EMed.Types.RowVersion.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>aspnetcore sqlserver rowversion</PackageTags>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <Description>A struct respresenting a SQL Server RowVersion value.</Description>
     <Authors>Aaron Papp</Authors>
     <Copyright>Copyright © 2021 Washington University in St. Louis</Copyright>
+    <DocumentationFile>.\WUSTL.EMed.Types.RowVersion.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>.\WUSTL.EMed.Types.RowVersion.xml</DocumentationFile>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
 
